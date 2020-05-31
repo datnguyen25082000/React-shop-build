@@ -1,0 +1,57 @@
+node -v
+npx create-react-app expressweb
+cd backend
+npm init -y
+npm install express cors mongoose dotenv
+npm install -h nodemon
+
+run server: backend folder: node server.js
+run web: folder: npm start 
+
+xoa thu muc node_modules -> copy code frontend (public, src) -> npm install 
+(tranh trung dereferences khac phien ban)
+
+trong link lien ket mongodb co ten database can lien ket 
+
+lay gia tri cua submit : e.target.username.value (value trong input co name= username)
+
+*** kiểm tra account
+axios.post('http://localhost:5000/users/check', user)
+    .then(response => {
+      if(response.data == user.username) {
+        this.props.history.push('/productlist');
+      }
+    })
+    ;
+
+submit form vào hàm chứa này -> nếu login đc thì vào /productlist
+
+axios -> giao tiep frontend va backend
+express router -> backend ket noi voi database
+
+*** them tinh nang đăng nhập mới vào đc :
+- thêm file auth.js: quản lý trạng thái đăng nhập và gọi các callback push đường dẫn
+- thêm file proteced.route: chứa component ProtectedRoute gọi các component private
+- các handle login logout goi auth cập nhật trạng thái đăng nhập và cb()
+- các handle phải là trong các path mặc định trên app.js để có thể gọi this.props.history.push
+
+***
+/* -- import data to database
+    storeProducts.forEach(function (element) {
+        const haha = {title:element.title, 
+          img:element.img,
+          price:element.price,
+          company:element.company,
+          info:element.info,
+          type:element.type,
+          count_num: 100,
+        }
+
+        axios.post('http://localhost:5000/productlist/add', haha)
+        .then(response => {
+          if(response.data == "productlist added!") {
+           console.log("haha ok");
+          }
+        });
+    });
+*/

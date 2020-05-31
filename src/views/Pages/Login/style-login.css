@@ -1,0 +1,16 @@
+.login-screen {
+  background-image: url("../../../assets/img/login-bg.jpg");
+}
+
+.input {
+  padding: 20px 10px !important;
+}
+
+.register-screen {
+  background-image: url("../../../assets/img/register-logo.jpg");
+  background-repeat: no-repeat;
+}
+
+.sign-up-cart {
+  width: 100% !important;
+}

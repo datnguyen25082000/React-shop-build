@@ -1,0 +1,6 @@
+{
+  "name": "Dryer",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Dryer.js"
+}

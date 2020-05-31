@@ -1,0 +1,6 @@
+{
+  "name": "HHAppliances",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./HHAppliances.js"
+}

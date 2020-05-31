@@ -1,0 +1,6 @@
+{
+  "name": "Tivi",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Tivi.js"
+}

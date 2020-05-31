@@ -1,0 +1,121 @@
+.products {
+  margin-bottom: 180px;
+}
+
+.product-item {
+  position: relative;
+}
+.product-item .ratingresult i {
+  color: #ff9727;
+}
+.product-item .price {
+  color: red;
+}
+.product-item .card-title {
+  color: black;
+}
+.product-item a:hover .card-title {
+  color: rgb(38, 74, 233);
+}
+.price {
+  font-weight: 600;
+  font-size: 1em;
+  padding-top: 15px;
+}
+.card-img {
+  padding-top: 15px;
+  width: 80%;
+  position: relative;
+  left: 10%;
+}
+.card-body {
+  padding-bottom: 15px;
+}
+.card-title {
+  height: 20px;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.btn-in-picture {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+.btn-in-picture button {
+  font-weight: 600;
+  width: 100%;
+  padding: 14px 35px;
+}
+.btn-in-picture button:hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.product-item .card:hover .btn-in-picture {
+  display: block;
+  opacity: 1;
+  bottom: 0px;
+  left: 100%;
+  transform: translate(-100%, 0%);
+}
+
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+.product-item .card {
+  border: white 1px solid !important;
+}
+
+.product-item .card:hover {
+  box-shadow: 8px 8px 4px #888888;
+  border: #888888 1px solid !important;
+  transition: all 0.3s ease-in;
+}
+.card a:hover {
+  text-decoration: none !important;
+}
+.product-item .card:hover img {
+  transition: all 0.6s ease-in-out;
+}
+
+.productsList {
+  background-color: transparent;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.btn-group-page {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.cart-icon {
+  color: #002c85;
+  font-size: 1em;
+}
+
+.search-box {
+  padding: 15px 15px;
+  background-color: white;
+  color: black;
+  margin-bottom: 40px;
+}
+.list-filter-item {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.search-box button[type="submit"] {
+  position: relative;
+  top: 8px;
+}
+
+.search-box label {
+  margin-bottom: 0px !important;
+}
